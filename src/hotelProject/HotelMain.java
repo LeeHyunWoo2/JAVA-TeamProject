@@ -2,6 +2,7 @@ package hotelProject;
 
 import java.util.Scanner;
 
+import hotelProject.DTO.MemberDTO;
 import hotelProject.Service.LoginService;
 
 public class HotelMain {
@@ -17,7 +18,7 @@ public class HotelMain {
 			switch(select) {
 			case 1:
 				LoginService loginService = new LoginService();
-				loginService.menu(scanner);
+				loginState = loginService.menu(scanner, MemberDTO, loginState);
 				break;
 			case 2:
 				break;
