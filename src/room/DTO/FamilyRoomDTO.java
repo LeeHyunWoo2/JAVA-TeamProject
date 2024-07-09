@@ -1,4 +1,4 @@
-package hotelProject.DTO;
+package hotelProject.room.DTO;
 
 public class FamilyRoomDTO {
 	
